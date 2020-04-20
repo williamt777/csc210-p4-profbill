@@ -2,7 +2,7 @@
  * This interface models an edge in a Graph210 for CSC 210, Spring 2020.
  * 
  * @author Prof Bill, Cole P, Dev T, Luis G, Jason E
- * @version 0.1
+ * @version 0.2
  */
 public interface Edge210 {
     /**
@@ -36,5 +36,11 @@ public interface Edge210 {
      * @return Returns true if part of edge
      */
     public boolean hasVert( int v);
+
+    /**
+     * Normalize the edge by ordering its verts, smallest first.
+     * Warning: Only use for UNDIRECTED graphs!
+     */
+    public void normalize();
 
 }
